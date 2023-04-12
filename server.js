@@ -36,7 +36,7 @@ app.post("/api/notes", function (req, res) {
     fs.writeFileSync("./db/db.json", JSON.stringify(existingNotes));
     res.json(existingNotes);
   
-}
+});
   
 
 app.listen(PORT, () =>
